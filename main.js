@@ -48,3 +48,10 @@ function createItem(text){
 addBtn.addEventListener('click',() => {
  onAdd();
 })
+// enter key
+input.addEventListener('keypress', event => {
+    console.log('key');
+    if (event.key === 'Enter') {
+        onAdd();
+    }
+});
