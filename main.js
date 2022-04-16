@@ -11,7 +11,9 @@ function onAdd() {
     const item = createItem(text);
     // 3. items 컨테이너 안에 새로 만든 아이템을 추가
     items.appendChild(item);
-    // 4. 인풋 한 곳을 초기화 시킴 ( 다시 쓸 수 있도록)
+    // 4.새로 추가된 아이템으로 스크롤링 
+    item.scrollIntoView({block:'center'})
+    // 5. 인풋 한 곳을 초기화 시킴 ( 다시 쓸 수 있도록)
     input.value ='';
     input.focus();
 
